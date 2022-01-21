@@ -1,0 +1,65 @@
+#Exercicio 1
+
+mkdir unix_tests
+cd unix_tests
+
+#Exercicio 2
+
+touch trybe.txt
+
+#Exercicio 3
+
+cp trybe.txt trybe_backup.txt
+
+#Exercicio 4 
+
+mv trybe.txt novoarquivo.txt
+
+#Exercico 5
+
+mkdir backup
+
+#Exercicio 6
+
+mv trybe_backup.txt backup
+
+#Exercicio 7
+
+mkdir backup2
+
+#Exercicio 8
+
+mv backup/trybe_backup.txt backup2
+
+#Exercicio 9
+
+rmdir backup
+
+#Exercicio 10
+
+mv backup2 backup
+
+#Exercicio 11
+
+pwd
+ls -l
+
+#Exercicio 12
+
+rm -rf backup
+
+#Exercicio 13
+
+clear
+
+#Exercicio 14
+
+cat skills.txt | head -5
+
+#Exercicio 15
+
+cat skills.txt | tail -4
+
+#Exercicio 16
+
+rm -rf "*.txt"

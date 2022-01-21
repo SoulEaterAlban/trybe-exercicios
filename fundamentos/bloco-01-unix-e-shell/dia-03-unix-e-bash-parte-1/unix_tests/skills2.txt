@@ -1,5 +1,0 @@
-React
-html
-Git
-Github
-Css
