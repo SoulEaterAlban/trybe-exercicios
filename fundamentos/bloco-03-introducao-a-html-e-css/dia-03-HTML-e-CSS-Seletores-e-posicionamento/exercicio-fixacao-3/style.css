@@ -1,0 +1,16 @@
+h1, p{
+    text-align: center;
+}
+
+#best-sites:hover{
+    background-color: blue;
+    
+}
+
+#best-sites:active{
+    color:white;
+}
+
+ul,ol{
+    list-style: none;
+}
