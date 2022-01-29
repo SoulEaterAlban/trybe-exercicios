@@ -1,0 +1,67 @@
+body {
+  background-color: #1F1300;
+  color: #FFC15E;
+}
+
+h1{
+  color: #CC5803;
+  text-align: center;
+}
+
+h2{
+  color: #F7934C;
+}
+
+img{
+  border-radius: 50%;
+
+}
+
+#name{
+  color: #F7B05B;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#born-state{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#pride{
+  font-family: monospace;
+  font-size: 20px;
+}
+
+.html{
+  font-size: 40px;
+}
+
+.java{
+  font-size: 35px;
+}
+
+.c{
+  font-size: 30px;
+}
+
+.ouvinte{
+  font-size: 25px;
+}
+
+.assertivo{
+  font-size: 18px;
+}
+
+#header{
+  width: 80%;
+  margin: auto;
+}
+.header-content{
+  width: 40%;
+  margin: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.description{
+  margin-left: 50px;
+}
