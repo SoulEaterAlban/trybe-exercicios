@@ -53,7 +53,7 @@ img{
 .assertivo{
   font-size: 18px;
 } */
-li:nth-child(odd){
+.abilities li:nth-child(odd){
   font-style: italic;
 }
 
