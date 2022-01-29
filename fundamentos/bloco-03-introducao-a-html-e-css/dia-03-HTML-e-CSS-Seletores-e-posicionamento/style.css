@@ -13,7 +13,9 @@ h2{
 }
 
 img{
-  border-radius: 50%;
+  border-radius: 10%;
+  background-color:#F7B05B;
+  padding: 10px;
 
 }
 
@@ -27,12 +29,12 @@ img{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-#pride{
+/* #pride{
   font-family: monospace;
   font-size: 20px;
-}
+} */
 
-.html{
+/* .html{
   font-size: 40px;
 }
 
@@ -50,19 +52,27 @@ img{
 
 .assertivo{
   font-size: 18px;
+} */
+li:nth-child(odd){
+  font-style: italic;
 }
 
 #header{
   width: 80%;
   margin: auto;
+  
 }
 .header-content{
-  width: 40%;
+  width: 35%;
   margin: auto;
   display: inline-block;
   vertical-align: middle;
+  margin-bottom: 30px;
+}
+.photo{
+  margin-left: 20px;
 }
 
 .description{
-  margin-left: 50px;
+  margin-left: 10px;
 }
