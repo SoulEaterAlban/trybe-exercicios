@@ -35,3 +35,14 @@ img{
     background-color: pink;
     padding: 10px;
 }
+.Ref ul li{
+    text-align: left;
+}
+.Ref{
+    max-width:60%;
+    margin-left: 190px;
+}
+
+footer{
+    text-align: center;
+}
