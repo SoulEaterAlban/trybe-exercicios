@@ -1,6 +1,37 @@
+nav ul {
+    list-style-type: none;
+}
+header{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+nav ul li{
+    display: inline;
+    margin-left: 20px;
+}
+.main{
+    text-align: center;
+}
+
 img{
     width: 300px;
 }
-tbody{
-    text-align: center;
+
+.sec-right{
+    display: inline-block;
+    margin-left:100px;
+    border: 1px solid black;
+
+}
+.sec-left{
+    width: 40%;
+    display:inline-block;
+    vertical-align: top;
+    text-align: left;
+}
+.bg-pink{
+    background-color: pink;
+    padding: 10px;
 }
