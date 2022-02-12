@@ -57,16 +57,26 @@
   </head>
   <body>
     <script>
+      // Exercicio 1
       let corpo = document.getElementsByTagName('body');
       let addh1 = document.createElement('h1');
-        function addCorpo(elemento){
-            corpo[0].appendChild(elemento);
-        }
-        addCorpo(addh1);
+      function addCorpo(elemento){
+        corpo[0].appendChild(elemento);
+      }
+      addCorpo(addh1);
 
-        let filhoH1 = corpo[0].children[1];
-        filhoH1.innerText = 'Exercício 5.2 - JavaScript DOM';
-        
+      let filhoH1 = corpo[0].children[1];
+      filhoH1.innerText = 'Exercício 5.2 - JavaScript DOM';
+      //Exercicio 2
+
+      let principal = document.createElement('main');
+      addCorpo(principal);
+
+      let filhoMain = document.getElementsByTagName('main');
+      
+      filhoMain[0].className = 'principal';
+      // Exercicio 3
+
     </script> 
   </body>
 </html>
