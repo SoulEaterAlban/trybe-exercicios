@@ -74,8 +74,16 @@
 
       let filhoMain = document.getElementsByTagName('main');
       
-      filhoMain[0].className = 'principal';
+      filhoMain[0].className = 'main-content';
       // Exercicio 3
+      let addSecao = document.createElement('section');
+
+      function addPrincipal(elemento){
+        filhoMain[0].appendChild(elemento);
+      }
+      addPrincipal(addSecao);
+      let primeiraSecao = filhoMain[0].firstElementChild;
+      primeiraSecao.className = 'center-content';
 
     </script> 
   </body>
