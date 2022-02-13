@@ -84,6 +84,15 @@
       addPrincipal(addSecao);
       let primeiraSecao = filhoMain[0].firstElementChild;
       primeiraSecao.className = 'center-content';
+      // Exercicio 4
+
+      let addParagrafo = document.createElement('p');
+      function addSection(elemento) {
+         primeiraSecao.appendChild(elemento);
+      }
+
+      addSection(addParagrafo);
+      primeiraSecao.firstElementChild.innerText = 'Hoje eu comi pão com presunto e queijo';
 
     </script> 
   </body>
