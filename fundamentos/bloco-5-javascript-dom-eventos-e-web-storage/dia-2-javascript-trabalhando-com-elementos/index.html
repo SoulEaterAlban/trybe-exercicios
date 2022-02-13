@@ -99,6 +99,53 @@
       let segundaSecao = primeiraSecao.nextElementSibling;
       segundaSecao.className = 'left-content'
 
+      // Exercicio 6
+      addPrincipal(document.createElement('section'));
+      let terceiraSecao = segundaSecao.nextElementSibling;
+      terceiraSecao.className = 'right-content';
+
+      // Exercicio 7 
+      let addImagem = document.createElement('img');
+      function addSecaoEsquerda(elemento) {
+        segundaSecao.appendChild(elemento);
+      }
+      addSecaoEsquerda(addImagem);
+      let imagem = segundaSecao.firstElementChild;
+      imagem.src = 'https://picsum.photos/200';
+      imagem.className = 'small-image';
+
+      // Exercicio 8
+      let addLista = document.createElement('ul');
+      function addSecaoDireita(elemento) {
+        terceiraSecao.appendChild(elemento);
+      }
+      addSecaoDireita(addLista);
+      let lista = terceiraSecao.firstElementChild;
+      let itemLista = [
+            'um',
+            'dois',
+            'tres',
+            'quatro',
+            'cinco',
+            'seis',
+            'sete',
+            'oito',
+            'nove',
+            'dez'
+      ];
+      for(index = 0;index < itemLista.length; index += 1 ){
+        let numeroLista = document.createElement('li');
+        numeroLista.innerText = itemLista[index];
+
+        lista.appendChild(numeroLista);
+      }
+      // exercicio 9
+
+      for(let i = 0 ; i < 3; i+=1){
+        let addSubTitulo = document.createElement('h3');
+      addSubTitulo.innerText= 'Amo a Sofia';
+        document.querySelector('.main-content').appendChild(addSubTitulo);
+      }
 
     </script> 
   </body>
