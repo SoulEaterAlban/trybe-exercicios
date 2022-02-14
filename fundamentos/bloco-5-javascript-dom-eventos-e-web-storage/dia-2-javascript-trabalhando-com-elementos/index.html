@@ -146,6 +146,30 @@
         addSubTitulo.innerText= 'Amo a Sofia';
         document.querySelector('.main-content').appendChild(addSubTitulo);
       }
+      // Parte 2 - Exercicio 1
+
+      filhoH1.className = 'title';
+      // Exercicio 2
+
+      let todosH3 = document.getElementsByTagName('h3');
+      for (let i = 0; i < 3; i += 1){
+        todosH3[i].className = 'description';
+      }
+      // Exercicio 3
+      filhoMain = document.querySelector('.main-content');
+      filhoMain.removeChild(segundaSecao);
+
+      // Exercicio 4
+      terceiraSecao.style.marginRight = 'auto';
+
+      // Exercicio 5
+      terceiraSecao.parentElement.style.backgroundColor = 'green';
+
+      // Exercico 6
+      for(i = 0 ; i< 2 ; i+=1){
+        lista.lastElementChild.remove();
+      }
+
 
     </script> 
   </body>
