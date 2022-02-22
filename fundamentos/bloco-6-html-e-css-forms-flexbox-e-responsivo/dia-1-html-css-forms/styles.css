@@ -1,0 +1,13 @@
+*{
+    color: gray;
+}
+
+div {
+    border: solid black 3px;
+    padding: 10px;
+}
+
+button {
+    padding: 3px 40px;
+    margin-top: 10px;
+}
