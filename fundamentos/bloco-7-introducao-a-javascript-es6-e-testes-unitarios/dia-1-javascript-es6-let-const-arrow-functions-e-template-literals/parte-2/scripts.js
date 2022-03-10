@@ -24,44 +24,29 @@ const longestWord = text => {
 
 console.log(longestWord("Antonio foi no banheiro e não sabemos o que aconteceu"));
 
-// const substitutionX = (text) => {
-//     let pronto = `Tryber x aqui!Tudo bem?`;
-//     let result = pronto.split('');
-//     for (let i = 0; i < result.length; i += 1) {
-//         if(result[i] === 'x'){
-//             result[i] = text;
-//         }
-//     }
-//     result = result.join('');
-//     return result;
-// }
-// console.log(substitutionX('bebeto'));
-
-const array = ["Android", "iOS", "Architecture", "Teach", "Run"];
-
-function buildSkillsPhrase (paramOne) {
-    const fun1 = paramInner => (
-      `Tryber ${paramInner} aqui!
-
-      Tudo bem?`
-    );
-
-    let result = `${fun1(paramOne)}
-
-    Minhas cinco principais habilidades são:`;
-
-    array.forEach((skill, index) =>
-    result = `${result}
-
-    - ${skill}`);
-
-    result = `
-{result}
-
-    #goTrybe
-    `;
-
+const array = ['Js', 'Html', 'Css', 'React'];
+const substitutionX = (text) => {
+    let pronto = `Tryber x aqui!Tudo bem?`;
+    let result = pronto.split('');
+    for (let i = 0; i < result.length; i += 1) {
+        if(result[i] === 'x'){
+            result[i] = text;
+        }
+    }
+    result = result.join('');
     return result;
 }
 
-console.log(buildSkillsPhrase("Lucas"));
+const skillsText = (name) => {
+    let ordenedArray = array.sort();
+    const skills = `
+Minhas cinco principais habilidades são:
+${ordenedArray[0]}
+${ordenedArray[1]}
+${ordenedArray[2]}
+${ordenedArray[3]}`
+    const textFinal = substitutionX(name) + skills;
+    return textFinal;
+}
+
+console.log(skillsText('Breno'));
