@@ -17,8 +17,11 @@
   <script>
  
     const verifynumber = (number1,number2) => {
+        if(isNaN(number1) || isNaN(number2)){
+            throw new Error('Digite um valor Numérico');
+        }
         if(!number1 || !number2){
-            throw new Error('Os valores devem ser numéricos')
+            throw new Error('Os valores devem ser numéricos');
         }
     }
     function sum() { 
@@ -28,10 +31,9 @@
         verifynumber(value1,value2);
         const result = parseInt(value1) + parseInt(value2);
         document.getElementById('result').innerHTML = `Resultado: ${result}`;
-        document.getElementById('value1').value = '';
-        document.getElementById('value2').value = '';
         } catch (error) {
         document.getElementById('result').innerHTML = `Erro: ${error.message}`;
+        } finally{
         document.getElementById('value1').value = '';
         document.getElementById('value2').value = '';
         }
