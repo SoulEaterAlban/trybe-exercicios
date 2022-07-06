@@ -30,10 +30,10 @@ function createDaysOfMonth(){
 		daysList.appendChild(allDaysListItem);
 
 		if(allDays == 24 || allDays == 25 || allDays == 31){
-			allDaysListItem.className = 'day holiday';
+			allDaysListItem.classList.add('holiday');
 		}
 		if(allDays == 4 || allDays == 11 || allDays == 18 || allDays == 25){
-			allDaysListItem.className = 'day friday';
+			allDaysListItem.classList.add('friday');
 		}
 
 	}
@@ -42,3 +42,25 @@ function createDaysOfMonth(){
 createDaysOfMonth();
 
 // Exercicio 2 
+function createButtons(texto) {
+  const divChild = document.querySelector('.buttons-container');
+  const buttonFeriado = document.createElement('button');
+  buttonFeriado.id = 'btn-holiday';
+  buttonFeriado.innerText = texto;
+
+  divChild.appendChild(buttonFeriado);
+}
+
+createButtons('Feriados');
+
+// Exercicio 3
+
+function feriadosClick(){
+  const button = document.getElementById('btn-holiday');
+  const holidayListItem = document.querySelectorAll('.holiday');
+
+  for(index = 0; index < holidayListItem.length; index += 1){
+
+  }
+
+}
